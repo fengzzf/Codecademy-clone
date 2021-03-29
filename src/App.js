@@ -1,13 +1,11 @@
-import "./App.scss";
 import NavBar from "./components/header/NavBar";
-import Catalog from "./components/Catelog/Catalog";
-
+import "./App.scss";
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <NavBar />
-        <Catalog />
+        {/* <Catalog /> */}
       </header>
     </div>
   );

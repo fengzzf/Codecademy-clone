@@ -8,14 +8,14 @@ import userPhoto from "../../../assests/img/images.jpg";
 
 const DropDownItems = () => {
   return (
-    <div>
+    <>
       <a href="#">
-        <img src={home} alt="home icon" className="navbar_icon--md" />
+        <img src={home} alt="home icon" className="navbar__icon--md" />
         My Home
       </a>
 
       <a href="#">
-        <img src={course} alt="course icon" className="navbar-icon--md" />
+        <img src={course} alt="course icon" className="navbar__icon--md" />
         Course Catalog
       </a>
 
@@ -46,7 +46,7 @@ const DropDownItems = () => {
         />
         Shanoy Sinclair
       </a>
-    </div>
+    </>
   );
 };
 

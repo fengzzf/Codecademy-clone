@@ -1,6 +1,6 @@
 const NotificationItems = () => {
   return (
-    <div className="navbar_notification">
+    <div className="navbar__notification">
       <p>
         No new notifications.
         <br />
