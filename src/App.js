@@ -1,8 +1,13 @@
+import "./App.scss";
+import NavBar from "./components/header/NavBar";
+import Catalog from "./components/Catelog/Catalog";
+
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <h1>Codecademy clone-- waiting for a minutes...</h1>
+        <NavBar />
+        <Catalog />
       </header>
     </div>
   );
