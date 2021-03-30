@@ -30,9 +30,9 @@ const Accordion = ({ Links, title }) => {
       </button>
       <div className="panel" ref={accordionBtn}>
         {Links.map((link, index) => (
-          <p href="#" key={index}>
+          <a href="#" key={index}>
             {link}
-          </p>
+          </a>
         ))}
       </div>
     </>

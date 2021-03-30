@@ -168,27 +168,25 @@
 	}
 }
 
-
-
-@media screen and (min-width:75em) {
-    .navbar{
-        padding:1.125em 6em;
-        display: flex;
-        align-items: center;
-        & > * + * {
-            padding-left:1em;
-        }
-        &__icons {
-            position: absolute;
+@media screen and (min-width: 75em) {
+	.navbar {
+		padding: 1.125em 6em;
+		display: flex;
+		align-items: center;
+		& > * + * {
+			padding-left: 1em;
+		}
+		&__icons {
+			position: absolute;
 			top: 1.6em;
 			right: 21em;
-        }
-    }
-    .navbar__toggleMenu-btn {
+		}
+	}
+	.navbar__toggleMenu-btn {
 		display: none;
 	}
 
-    .navbarItems {
+	.navbarItems {
 		display: flex;
 		align-items: center;
 		position: relative;
@@ -223,5 +221,119 @@
 			height: 40px;
 			// padding-left: 1em;
 		}
+	}
+	.catalogContainer__outer {
+		margin-top: 1em;
+	}
+
+	.sidebar {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+
+		&__left {
+			display: grid;
+
+			grid-column: 1 / span 3;
+			margin-top: 6.5em;
+			margin-left: 5em;
+		}
+		.accordion {
+			display: block;
+			color: $color-black;
+			margin-bottom: $margin-xlg;
+			font-weight: 600;
+			border: 0;
+			outline: none;
+			background-color: inherit;
+			font-size: 1.2rem;
+			cursor: pointer;
+
+			& > .arrow-icon {
+				height: 15px;
+				margin-left: 0.2em;
+			}
+		}
+
+		.panel {
+			display: flex;
+			flex-direction: column;
+			margin-top: -1em;
+			margin-bottom: $margin-xlg;
+
+			& > a {
+				text-decoration: none;
+				color: $color-black;
+				font-size: 0.95rem;
+				margin-left: $margin-md;
+			}
+			& > a:hover {
+				color: $color-purple;
+			}
+			& > a + a {
+				padding-top: $padding-lg;
+			}
+		}
+
+		&__right {
+			grid-column: 4 / span 10;
+			margin-right: 2.5em;
+		}
+	}
+	.cardContainer__subgrid-2-col {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-column: 1 / span 2;
+		gap: 2em;
+	}
+	.cardContainer__subgrid-1-row {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		// grid-column: 1 / span 2;
+		gap: 2em;
+	}
+
+	.quiz__catalog-btn {
+		display: none;
+	}
+
+	.quiz__box-items {
+		padding: 1.2em 0;
+
+		& > .quizSvg_1 {
+			left: 10px;
+		}
+		> p {
+			font-size: 1.3rem;
+		}
+	}
+	.quizSvg_2 {
+		height: 55px;
+	}
+
+	.courseContainer__outer {
+		padding-left: 2.5em;
+		border-top: none;
+		border-left: 1px solid $color-black;
+	}
+
+	.footerContainer__inner {
+		margin: $margin-sml 8em;
+	}
+	.infoContainer {
+		margin-top: $margin-lg;
+	}
+
+	.copyWriteInfo__Container {
+		display: flex;
+		align-items: baseline;
+		justify-content: space-between;
+	}
+
+	.footerGrid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.infoContainer {
+		column-gap: 2em;
 	}
 }

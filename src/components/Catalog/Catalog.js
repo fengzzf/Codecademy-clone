@@ -4,8 +4,9 @@ import Quiz from "../quiz/Quiz";
 import PopularCatalog from "./PopularCatalog";
 import NewsNoteWorth from "./newsNoteWorthy/NewsNoteWorth";
 import GetInpsire from "./getInspireSection/GetInspire";
-// import Footer from "../footer/Footer";
+import Footer from "../footer/Footer";
 import Accordion from "./accordion/Accordion";
+
 const languages = [
   "HTML & CSS",
   "Python",
@@ -58,6 +59,7 @@ const Catalog = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
