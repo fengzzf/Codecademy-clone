@@ -18,10 +18,10 @@ const NavBar = () => {
 
     if (toggle.style.display === "block") {
       toggle.style.display = "none";
-      setShowNotification(() => false);
+      setShowNotification(false);
       navbar.style.bottom = null;
     } else if (browserWidth < 1200) {
-      setShowNotification(() => true);
+      setShowNotification(true);
       toggle.style.display = "block";
       navbar.style.bottom = "70%";
     }
@@ -31,16 +31,16 @@ const NavBar = () => {
     const notificationBtn = document.querySelector(".navbar__toggleNofi-btn");
     const navbar = document.querySelector(".navbar");
 
-    setShowNotification(() => false);
+    setShowNotification(false);
 
     if (toggle.style.display === "block") {
       toggle.style.display = "none";
       notificationBtn.style.display = "";
 
       navbar.style.bottom = null;
-      setShowDropdownItems(() => false);
+      setShowDropdownItems(false);
     } else {
-      setShowDropdownItems(() => true);
+      setShowDropdownItems(true);
       notificationBtn.style.display = "none";
       toggle.style.display = "block";
       navbar.style.bottom = 0;
